@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the full article on Wordsmith.">
+    <title>Article | Wordsmith</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="site-header"></header>
+
+    <main>
+        <div id="post-detail-section" class="content-wrapper"
+            style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; padding-top: 4rem;">
+            <!-- Content will be injected by post-detail.js -->
+            <div class="loading" style="text-align: center; padding: 5rem;">Loading article...</div>
+        </div>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script type="module">
+        import { initHeader } from './src/components/header.js';
+        import { initFooter } from './src/components/footer.js';
+        import { initPostDetail } from './src/components/post-detail.js';
+
+        initHeader();
+        initFooter();
+        initPostDetail();
+    </script>
+</body>
+
+</html>

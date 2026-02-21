@@ -42,11 +42,13 @@ export async function initPostGrid(filterCategory = null, limit = null, containe
                 ${posts.map(post => `
                     <article class="post-card">
                         <div class="post-image">
-                            <img src="${post.image}" alt="${post.title}">
+                            <a href="post.html?id=${post.id}">
+                                <img src="${post.image}" alt="${post.title}">
+                            </a>
                         </div>
                         <span class="post-category">${post.category}</span>
                         <h3>
-                            <a href="#" class="hover-underline">${post.title}</a>
+                            <a href="post.html?id=${post.id}" class="hover-underline">${post.title}</a>
                         </h3>
                         <p>${post.excerpt}</p>
                         <div class="post-meta">
