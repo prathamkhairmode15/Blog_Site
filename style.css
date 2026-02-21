@@ -414,3 +414,124 @@ footer {
     object-fit: cover;
     display: block;
 }
+
+/* Search Bar Styles */
+.search-container {
+    position: relative;
+    width: 200px;
+    transition: var(--transition-smooth);
+}
+
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#blog-search {
+    width: 100%;
+    padding: 0.6rem 2.5rem 0.6rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.85rem;
+    transition: var(--transition-smooth);
+    background: var(--bg-secondary);
+}
+
+#blog-search:focus {
+    border-color: var(--primary-color);
+    background: #fff;
+    width: 250px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.search-container:focus-within {
+    width: 250px;
+}
+
+.search-input-wrapper .search-icon {
+    position: absolute;
+    right: 12px;
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+.search-results-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color);
+    max-height: 400px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1001;
+}
+
+.search-result-item {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background: var(--bg-secondary);
+}
+
+.result-title {
+    display: block;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+}
+
+.result-category {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.no-results {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 0.5rem;
+    }
+    
+    #blog-search:focus {
+        width: 100%;
+    }
+    
+    .search-container:focus-within {
+        width: 100%;
+    }
+    
+    .search-results-dropdown {
+        width: 100%;
+        position: fixed;
+        top: 120px;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: calc(100vh - 120px);
+    }
+}
