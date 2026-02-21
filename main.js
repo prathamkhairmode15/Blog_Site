@@ -7,7 +7,7 @@ import { initFooter } from './src/components/footer.js';
 document.addEventListener('DOMContentLoaded', () => {
     initHeader();
     initHero();
-    initPostGrid();
+    initPostGrid(null, 4);
     initSidebar();
     initFooter();
 });

@@ -30,5 +30,37 @@
         "date": "Feb 17, 2026",
         "excerpt": "Sometimes looking back is as important as moving forward. My monthly summary.",
         "image": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 5,
+        "title": "Morning Routine for Peak Productivity",
+        "category": "Growth",
+        "date": "Feb 15, 2026",
+        "excerpt": "How I start my day to ensure maximum focus and energy throughout the morning.",
+        "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 6,
+        "title": "Clean Code Principles in Modern JS",
+        "category": "Coding",
+        "date": "Feb 14, 2026",
+        "excerpt": "Exploring readability and maintainability in JavaScript applications.",
+        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 7,
+        "title": "Power of Meditation in Engineering",
+        "category": "Growth",
+        "date": "Feb 12, 2026",
+        "excerpt": "Why mental clarity is the most important tool for any software developer.",
+        "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 8,
+        "title": "Understanding CSS Grid Transitions",
+        "category": "Coding",
+        "date": "Feb 10, 2026",
+        "excerpt": "Advanced layouts with smooth state changes using modern CSS techniques.",
+        "image": "https://images.unsplash.com/photo-1523437113738-bbd3ee89fb97?auto=format&fit=crop&q=80&w=800"
     }
 ]

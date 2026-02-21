@@ -1,7 +1,7 @@
-export async function initPostGrid() {
-    const postGrid = document.getElementById('post-grid-section');
+export async function initPostGrid(filterCategory = null, limit = null, containerId = 'post-grid-section') {
+    const postGrid = document.getElementById(containerId);
     if (!postGrid) {
-        console.error('Element with id "post-grid-section" not found');
+        console.error(`Element with id "${containerId}" not found`);
         return;
     }
 
@@ -12,14 +12,32 @@ export async function initPostGrid() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        const posts = await response.json();
+        let posts = await response.json();
 
         if (!Array.isArray(posts)) {
             throw new Error('Data loaded is not an array');
         }
 
+        // Sort posts by ID descending (latest first)
+        posts.sort((a, b) => b.id - a.id);
+
+        // Apply filtering if a category is specified
+        if (filterCategory) {
+            posts = posts.filter(post => post.category === filterCategory);
+        }
+
+        // Apply limit if specified
+        if (limit) {
+            posts = posts.slice(0, limit);
+        }
+
+        if (posts.length === 0) {
+            postGrid.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 3rem;">No posts found for "${filterCategory || 'this section'}".</p>`;
+            return;
+        }
+
         postGrid.innerHTML = `
-            <h2 style="font-size: 1.5rem; margin-bottom: 2rem; border-bottom: 2px solid var(--text-dark); display: inline-block;">Latest Posts</h2>
+            ${!filterCategory ? '<h2 style="font-size: 1.5rem; margin-bottom: 2rem; border-bottom: 2px solid var(--text-dark); display: inline-block;">Latest Posts</h2>' : ''}
             <div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
                 ${posts.map(post => `
                     <article class="post-card" style="margin-bottom: 2rem;">

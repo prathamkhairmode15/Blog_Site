@@ -20,17 +20,18 @@
             <h1 style="font-size: 3rem; margin-bottom: 1rem;">Daily Practices</h1>
             <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto 3rem;">Documenting
                 consistency and discipline in my daily routine.</p>
-            <div id="practices-list" style="max-width: 800px; margin: 0 auto; text-align: left;">
-                <p>Coming soon: A detailed list of my daily habits and exercises.</p>
-            </div>
+
+            <section id="post-grid-section" style="text-align: left;"></section>
         </div>
     </main>
     <footer id="site-footer"></footer>
     <script type="module">
         import { initHeader } from './src/components/header.js';
         import { initFooter } from './src/components/footer.js';
+        import { initPostGrid } from './src/components/post-grid.js';
         initHeader();
         initFooter();
+        initPostGrid('Growth');
     </script>
 </body>
 
