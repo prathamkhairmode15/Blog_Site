@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Wordsmith</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="site-header"></header>
+    <main>
+        <div class="content-wrapper" style="grid-template-columns: 1fr; max-width: 800px; padding-top: 5rem;">
+            <h1 style="font-size: 3rem; margin-bottom: 2rem;">About Me</h1>
+            <div class="about-content" style="font-size: 1.1rem; line-height: 1.8;">
+                <p style="margin-bottom: 1.5rem;">Welcome to Wordsmith, a space dedicated to the pursuit of knowledge
+                    and the discipline of daily practice.</p>
+                <p style="margin-bottom: 1.5rem;">I believe that small, consistent actions lead to significant long-term
+                    growth. This blog serves as my public log, where I share my journey, struggles, and breakthroughs in
+                    the fields I'm passionate about.</p>
+                <p>Whether it's a new programming pattern or a life lesson, you'll find it here.</p>
+            </div>
+        </div>
+    </main>
+    <footer id="site-footer"></footer>
+    <script type="module">
+        import { initHeader } from './src/components/header.js';
+        import { initFooter } from './src/components/footer.js';
+        initHeader();
+        initFooter();
+    </script>
+</body>
+
+</html>

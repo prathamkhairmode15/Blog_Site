@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Mastering the Art of Daily Practice",
+        "category": "Growth",
+        "date": "Feb 20, 2026",
+        "excerpt": "Consistency is key to mastering any skill. Here is how I structure my daily practice sessions.",
+        "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 2,
+        "title": "Learning JavaScript Patterns for Scalability",
+        "category": "Coding",
+        "date": "Feb 19, 2026",
+        "excerpt": "Diving deep into design patterns and how they help build better web applications.",
+        "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 3,
+        "title": "The Importance of Design Systems",
+        "category": "Design",
+        "date": "Feb 18, 2026",
+        "excerpt": "Why building a reusable design system is the first step for any modern project.",
+        "image": "https://images.unsplash.com/photo-1586717791821-3f44a563cc4c?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 4,
+        "title": "Reflections on a Month of Learning",
+        "category": "Reflection",
+        "date": "Feb 17, 2026",
+        "excerpt": "Sometimes looking back is as important as moving forward. My monthly summary.",
+        "image": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&q=80&w=800"
+    }
+]
