@@ -10,7 +10,7 @@ export default defineConfig({
                 contact: resolve(__dirname, 'contact.html'),
                 learnings: resolve(__dirname, 'learnings.html'),
                 post: resolve(__dirname, 'post.html'),
-                practices: resolve(__dirname, 'practices.html'),
+                breaking: resolve(__dirname, 'breaking.html'),
             },
         },
     },
