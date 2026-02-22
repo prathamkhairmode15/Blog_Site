@@ -2,8 +2,14 @@ export function initHero() {
     const hero = document.getElementById('hero-section');
     hero.innerHTML = `
         <div class="hero-wrapper">
-            <img src="/assets/images/hero.jpg" 
-                 alt="Featured Post">
+            <video 
+                 autoplay
+                 muted
+                 loop
+                 playsinline
+                 style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+                 <source src="/assets/images/hero.mp4" type="video/mp4">
+            </video>
             <div class="hero-text-content">
                 <h1>Documenting My Journey: One Day at a Time</h1>
                 <div class="meta">
