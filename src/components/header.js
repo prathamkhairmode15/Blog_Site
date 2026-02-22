@@ -8,7 +8,7 @@ export function initHeader() {
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="practices.html">Practices</a></li>
+                    <li><a href="breaking.html">Breaking</a></li>
                     <li><a href="learnings.html">Learnings</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
