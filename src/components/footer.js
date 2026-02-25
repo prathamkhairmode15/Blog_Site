@@ -13,6 +13,7 @@ export function initFooter() {
                 <ul style="font-size: 0.85rem; color: var(--text-muted);">
                     <li style="margin-bottom: 0.5rem;"><a href="index.html">Home</a></li>
                     <li style="margin-bottom: 0.5rem;"><a href="learnings.html">Learnings</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="learnings.html">Learnings</a></li>
                     <li style="margin-bottom: 0.5rem;"><a href="about.html">About Us</a></li>
                     <li style="margin-bottom: 0.5rem;"><a href="contact.html">Contact</a></li>
                 </ul>
