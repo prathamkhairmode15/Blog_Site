@@ -1,16 +1,16 @@
 [
     {
         "id": 1,
-        "title": "Learning JavaScript Patterns for Scalability",
+        "title": "Introducing Kali Linux",
         "category": "Breaking",
-        "date": "Feb 19, 2026",
-        "excerpt": "Diving deep into design patterns and how they help build better web applications.",
-        "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=800",
+        "date": "Mar 1, 2026",
+        "excerpt": "In the world of cybersecurity, having the right tools is critical. One of the most widely used operating systems for security professionals and ethical hackers is Kali Linux.",
+        "image": "/assets/images/posts/Kali.png",
         "tags": [
-            "Dev",
-            "JavaScript",
-            "Patterns"
+            "Hacking",
+            "Kali",
+            "Linux"
         ],
-        "content": "<p>As applications grow from simple scripts to complex systems, the architecture becomes as important as the logic. Design patterns are proven solutions to common problems in software design.</p><h3>Why Patterns Matter</h3><p>They provide a common language for developers and help prevent code from becoming 'spaghetti'. In modern JavaScript, we often see patterns like Module, Observer, and Singleton being used to manage state and organize logic.</p><pre><code>// Example of a simple Singleton\nconst Database = (function() {\n  let instance;\n  function createInstance() {\n    return new Object(\"I am the instance\");\n  }\n  return {\n    getInstance: function() {\n      if (!instance) instance = createInstance();\n      return instance;\n    }\n  };\n})();</code></pre><p>Understanding these patterns allows you to build systems that are not only functional but also maintainable and scalable.</p>"
+        "content": "<h1>Introduction to Kali Linux: What It Is and Why It Is Used</h1>\n\n<h2>What Is Kali Linux?</h2>\n\n<p>Kali Linux is a Debian-based Linux distribution specifically designed for penetration testing, ethical hacking, and digital forensics.</p>\n\n<h2>Why Is Kali Linux Used?</h2>\n\n<p>Kali Linux is used to simulate real-world cyber attacks in a controlled and legal environment.</p>\n\n<h3>1. Pre-installed Security Tools</h3>\n\n<p>Kali includes tools for network scanning, packet analysis, vulnerability assessment, exploitation testing, and web application security testing.</p>\n\n<h3>2. Penetration Testing</h3>\n\n<p>Security professionals use Kali Linux to legally test systems and networks for vulnerabilities.</p>\n\n<h3>3. Digital Forensics</h3>\n\n<p>Kali provides tools to analyze compromised systems and recover digital evidence.</p>\n\n<h3>4. Wireless Security Testing</h3>\n\n<p>It supports wireless network testing and security analysis.</p>"
     }
 ]
