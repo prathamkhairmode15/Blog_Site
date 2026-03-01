@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Learning JavaScript Patterns for Scalability",
-        "category": "Coding",
+        "category": "Breaking",
         "date": "Feb 19, 2026",
         "excerpt": "Diving deep into design patterns and how they help build better web applications.",
         "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=800",
@@ -12,61 +12,5 @@
             "Patterns"
         ],
         "content": "<p>As applications grow from simple scripts to complex systems, the architecture becomes as important as the logic. Design patterns are proven solutions to common problems in software design.</p><h3>Why Patterns Matter</h3><p>They provide a common language for developers and help prevent code from becoming 'spaghetti'. In modern JavaScript, we often see patterns like Module, Observer, and Singleton being used to manage state and organize logic.</p><pre><code>// Example of a simple Singleton\nconst Database = (function() {\n  let instance;\n  function createInstance() {\n    return new Object(\"I am the instance\");\n  }\n  return {\n    getInstance: function() {\n      if (!instance) instance = createInstance();\n      return instance;\n    }\n  };\n})();</code></pre><p>Understanding these patterns allows you to build systems that are not only functional but also maintainable and scalable.</p>"
-    },
-    {
-        "id": 2,
-        "title": "The Importance of Design Systems",
-        "category": "Design",
-        "date": "Feb 18, 2026",
-        "excerpt": "Why building a reusable design system is the first step for any modern project.",
-        "image": "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&q=80&w=800",
-        "tags": [
-            "Creative",
-            "Art",
-            "UI/UX"
-        ],
-        "content": "<p>A design system is a collection of reusable components, guided by clear standards, that can be assembled together to build any number of applications. It is the language that designers and developers use to communicate.</p><h3>Beyond UI Kits</h3><p>A true design system includes not just the 'what' (the components), but also the 'how' and 'why' (the documentation and principles). This ensures that no matter who is working on a feature, the user experience remains consistent.</p><ul><li><strong>Efficiency:</strong> Stop reinventing the wheel for every new button or form field.</li><li><strong>Consistency:</strong> Build trust with your users through a unified brand experience.</li><li><strong>Scale:</strong> Allow large teams to work in parallel without diverging designs.</li></ul>"
-    },
-    {
-        "id": 3,
-        "title": "Reflections on a Month of Learning",
-        "category": "Reflection",
-        "date": "Feb 17, 2026",
-        "excerpt": "Sometimes looking back is as important as moving forward. My monthly summary.",
-        "image": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&q=80&w=800",
-        "tags": [
-            "Life",
-            "Music",
-            "Growth"
-        ],
-        "content": "<p>Looking back at the last thirty days, the most important lesson wasn't a technical skill—it was the value of consistency. I set out to learn three new topics, and while I didn't master them all, the habit of daily showing up proved most valuable.</p><p>Reflection allows us to synthesize our experiences and turn raw information into actual wisdom. I recommend everyone keeps a learning log, even if it's just a few bullet points at the end of the day.</p>"
-    },
-    {
-        "id": 4,
-        "title": "Clean Code Principles in Modern JS",
-        "category": "Coding",
-        "date": "Feb 14, 2026",
-        "excerpt": "Exploring readability and maintainability in JavaScript applications.",
-        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
-        "tags": [
-            "Dev",
-            "JavaScript",
-            "CleanCode"
-        ],
-        "content": "<p>Clean code is code that is easy to understand and easy to change. In JavaScript, this often means leveraging modern ES6+ features and following SOLID principles where appropriate. Remember: code is read far more often than it is written.</p><p>Use descriptive variable names, keep functions small and focused on a single task, and don't be afraid to refactor as soon as you see a mess forming.</p>"
-    },
-    {
-        "id": 5,
-        "title": "Understanding CSS Grid Transitions",
-        "category": "Coding",
-        "date": "Feb 10, 2026",
-        "excerpt": "Advanced layouts with smooth state changes using modern CSS techniques.",
-        "image": "https://images.unsplash.com/photo-1523437113738-bbd3ee89fb97?auto=format&fit=crop&q=80&w=800",
-        "tags": [
-            "Dev",
-            "CSS",
-            "Design"
-        ],
-        "content": "<p>CSS Grid has revolutionized layout design, but animating grid changes remains a challenge. We look at the <code>grid-template-rows</code> and <code>grid-template-columns</code> transition properties and how they are starting to gain browser support.</p><p>By combining Grid with CSS transitions, we can create truly immersive and dynamic user interfaces that feel alive.</p>"
     }
 ]
