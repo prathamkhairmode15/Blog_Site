@@ -20,7 +20,7 @@ export async function initSidebar() {
         sidebar.innerHTML = `
             <div class="sidebar-widget">
                 <h4>About Me</h4>
-                <p>Hi! I'm sharing my daily practices and learnings to help others on their journey. Follow along to see my progress.</p>
+                <p>I’m a continuous learner building a strong technical foundation across high-demand domains like cybersecurity and software development.</p>
             </div>
 
             <div class="sidebar-widget">
