@@ -29,7 +29,7 @@ export async function initPostDetail() {
         }
 
         // Update page title
-        document.title = `${post.title} | Wordsmith`;
+        document.title = `${post.title} | The Invisible Cipher`;
 
         postDetailContainer.innerHTML = `
             <article class="post-detail-container">

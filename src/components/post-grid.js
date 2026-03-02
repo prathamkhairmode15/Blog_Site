@@ -1,4 +1,4 @@
-export async function initPostGrid(filterCategory = null, limit = null, containerId = 'post-grid-section') {
+export async function initPostGrid(filterCategory = null, limit = null, containerId = 'post-grid-section', filterTag = null) {
     const postGrid = document.getElementById(containerId);
     if (!postGrid) {
         console.error(`Element with id "${containerId}" not found`);
@@ -18,13 +18,18 @@ export async function initPostGrid(filterCategory = null, limit = null, containe
             throw new Error('Data loaded is not an array');
         }
 
-        // Sort posts by ID descending (latest first)
-        posts.sort((a, b) => b.id - a.id);
-
         // Apply filtering if a category is specified
         if (filterCategory) {
             posts = posts.filter(post => post.category === filterCategory);
         }
+
+        // Apply filtering if a tag is specified
+        if (filterTag) {
+            posts = posts.filter(post => post.tags && post.tags.includes(filterTag));
+        }
+
+        // Sort posts by ID descending (latest first)
+        posts.sort((a, b) => b.id - a.id);
 
         // Apply limit if specified
         if (limit) {
@@ -32,12 +37,17 @@ export async function initPostGrid(filterCategory = null, limit = null, containe
         }
 
         if (posts.length === 0) {
-            postGrid.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 3rem;">No posts found for "${filterCategory || 'this section'}".</p>`;
+            const filterInfo = filterCategory ? `category "${filterCategory}"` : (filterTag ? `tag "${filterTag}"` : 'this section');
+            postGrid.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 3rem;">No posts found for ${filterInfo}.</p>`;
             return;
         }
 
+        let title = 'Latest Posts';
+        if (filterCategory) title = `Category: ${filterCategory}`;
+        if (filterTag) title = `Tag: ${filterTag}`;
+
         postGrid.innerHTML = `
-            ${!filterCategory ? '<h2 class="grid-title">Latest Posts</h2>' : ''}
+            ${limit === null ? `<h2 class="grid-title">${title}</h2>` : '<h2 class="grid-title">Latest Posts</h2>'}
             <div class="grid-container">
                 ${posts.map(post => `
                     <article class="post-card">

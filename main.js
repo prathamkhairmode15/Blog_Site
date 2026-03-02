@@ -5,9 +5,13 @@ import { initSidebar } from './src/components/sidebar.js';
 import { initFooter } from './src/components/footer.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+    const tag = urlParams.get('tag');
+
     initHeader();
     initHero();
-    initPostGrid(null, 4);
+    initPostGrid(category, null, 'post-grid-section', tag);
     initSidebar();
     initFooter();
 });

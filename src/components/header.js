@@ -3,7 +3,7 @@ export function initHeader() {
     header.innerHTML = `
         <div class="header-container">
             <div class="logo">
-                <a href="index.html" class="logo-text">THE INVISIBLE CIPHER</a>
+                <a href="index.html" class="logo-text">THE INVISIBLE <span>CIPHER</span></a>
             </div>
             <nav class="main-nav">
                 <ul class="nav-list">
